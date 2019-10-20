@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -15,10 +17,12 @@
     "express-sanitizer": "^1.0.5",
     "express-session": "^1.16.2",
     "method-override": "^3.0.0",
-    "mongoose": "^5.6.5",
+    "mongoose": "^5.7.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.1",
-    "semantic-ui": "^2.4.2"
-  }
+    "semantic-ui": "^2.4.2",
+    "snyk": "^1.236.0"
+  },
+  "snyk": true
 }
